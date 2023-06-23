@@ -12,3 +12,7 @@ Resource    keywords.resource
 Get File Size
     ${file_size}=    OperatingSystem.Get File Size    ${CURDIR}${/}keywords.resource
     Log    ${file_size}
+
+Get Modified Time
+    ${modified_time}=    OperatingSystem.Get Modified Time    ${CURDIR}${/}keywords.resource
+    Log    ${modified_time}
